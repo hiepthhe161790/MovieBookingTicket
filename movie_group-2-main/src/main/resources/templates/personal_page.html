@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Personal Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <h1>
+        Welcome, <span th:text="${userLogin.username}">Username</span>!
+    </h1>
+
+    <p>Name: <span th:text="${userLogin.name}">Full Name</span></p>
+    <p>Email: <span th:text="${userLogin.email}">Email</span></p>
+    <p>Phone Number: <span th:text="${userLogin.phoneNumber}">Phone</span></p>
+    <p>Address: <span th:text="${userLogin.address}">Address</span></p>
+    <p>Birthday: <span th:text="${userLogin.birthday}">Birthday</span></p>
+    <p>Gender: <span th:text="${userLogin.gender}">Gender</span></p>
+</body>
+
+</html>
